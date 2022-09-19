@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ArrowDown } from "react-feather";
 import Editor from "../Editor/Editor";
+import Resume from "../Resume/Resume";
 
 import styles from "./Body.module.css";
 
@@ -82,12 +83,12 @@ const Body = () => {
           information={resumeInformation}
           setInformation={setResumeInformation}
         />
-        {/* <Resume
-          ref={resumeRef}
-          sections={sections}
-          information={resumeInformation}
-          activeColor={activeColor}
-        /> */}
+        <Resume
+        // ref={resumeRef}
+        // sections={sections}
+        // information={resumeInformation}
+        // activeColor={activeColor}
+        />
       </div>
     </div>
   );
