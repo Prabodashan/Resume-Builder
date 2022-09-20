@@ -9,12 +9,18 @@ label {
   font-size: 1rem;
 }
 
-input {
+input,
+textarea {
   border: 1px solid #cccccc;
   outline: none;
   padding: 10px 12px;
   font-size: 1rem;
   border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  height: 27.5vh;
 }
 
 input:hover {

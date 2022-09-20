@@ -318,6 +318,7 @@ const Editor = (props) => {
         label="Summary"
         placeholder="Enter your objective/summary"
         value={values.summary}
+        inputType="textArea"
         onChange={(event) =>
           setValues((prev) => ({ ...prev, summary: event.target.value }))
         }
@@ -330,6 +331,7 @@ const Editor = (props) => {
       <InputControl
         label="Other"
         placeholder="Enter something"
+        inputType="textArea"
         value={values.other}
         onChange={(event) =>
           setValues((prev) => ({ ...prev, other: event.target.value }))

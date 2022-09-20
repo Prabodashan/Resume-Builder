@@ -1,6 +1,7 @@
 .container {
   padding: 50px 30px;
   text-align: center;
+  min-width: 550px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -28,4 +29,11 @@
 
 .right img {
   width: 400px;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

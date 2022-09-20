@@ -2,11 +2,15 @@ import React from "react";
 
 import styles from "./InputControl.module.css";
 
-function InputControl({ label, ...props }) {
+function InputControl({ inputType, label, ...props }) {
   return (
     <div className={styles.container}>
       {label && <label>{label}</label>}
-      <input type="text" {...props} />
+      {inputType === "textArea" ? (
+        <textarea type="text" {...props} />
+      ) : (
+        <input type="text" {...props} />
+      )}
     </div>
   );
 }
